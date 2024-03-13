@@ -16,6 +16,7 @@ class BlocsProviders extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => UsernameCubit(),
+          lazy: false,
         )
       ],
       child: const MyApp(),
